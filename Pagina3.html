@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/estiloPag3.css">
+        <link rel="stylesheet" href="css/normalize.css">
+        <title>BrDr-Incidencias</title>
+    </head>
+    <body>
+        <div class="logo">
+            <img src="img/Logo.webp">
+        </div>
+
+        <header>
+            <div class="cabecera">
+                <h1 class="nombre-pag">Bruma<span>Dron</span></h1>
+            </div>
+        </header>
+
+        <div class="contenedor-navegacion">
+            <nav class="contenedor nav-principal">
+                <a href="Pagina1.html"> Inicio </a>
+                <a href="Pagina2.html"> Blog </a>
+                <a href="Pagina3.html"> Incidencias </a>
+            </nav>
+        </div>
+
+        <main class="contenido-incidencia">
+            <img src="img/dronInci.png" alt="Dron Incidencia">
+            <form action="procesar.php" method="post">
+                <div class="elementos-formulario">
+                    <div class="elemento">
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" name="nombre" required>
+                    </div>
+                    <div class="elemento">
+                        <label for="correo">Correo Electrónico:</label>
+                        <input type="email" id="correo" name="correo" required>
+                    </div>
+                    <div class="elemento">
+                        <label for="edad">Edad:</label>
+                        <input type="number" id="edad" name="edad" required>
+                    </div>
+                    <div class="elemento">
+                        <label>Cliente:</label>
+                        <ol>
+                            <li>
+                                <input type="radio" id="cliente-h"
+                                    name="cliente"
+                                    value="habitual" required>
+                                <label for="cliente-h">Habitual</label>
+                            </li>
+                            <li>
+                                <input type="radio" id="cliente-n"
+                                    name="cliente"
+                                    value="nuevo"
+                                    required>
+                                <label for="cliente-f">Nuevo</label>
+                            </li>
+                        </ol>
+                    </div>
+                    <div class="elemento">
+                        <label for="dron">En caso de que la incidencia sea con
+                            uno
+                            o más drones indique con cuales:</label>
+                        <ol>
+                            <ul>
+                                <input type="checkbox" id="jondron"
+                                    name="dron"
+                                    value="jondron">
+                                <label for="jondron">JonDron</label>
+                            </ul>
+                            <ul>
+                                <input type="checkbox" id="mediadron"
+                                    name="dron"
+                                    value="mediadron">
+                                <label for="mediadron">MediaDron</label>
+                            </ul>
+                            <ul>
+                                <input type="checkbox" id="julandron"
+                                    name="dron"
+                                    value="julandron">
+                                <label for="julandron">JulanDron</label>
+                            </ul>
+                            <ul>
+                                <input type="checkbox" id="interes2"
+                                    name="dron"
+                                    value="drontor">
+                                <label for="drontor">Drontor</label>
+                            </ul>
+                            <ul>
+                                <input type="checkbox" id="interes3"
+                                    name="dron"
+                                    value="tecnodron">
+                                <label for="tecnodron">TecnoDron</label>
+                            </ul>
+                        </ol>
+                    </div>
+                    <div class="elemento">
+                        <label for="tipoInci">Tipo de Incidencia:</label>
+                        <select id="tipoInci" name="tipoInci" required>
+                            <option value="estructura">Estructura</option>
+                            <option value="bateria">Batería</option>
+                            <option value="camara">Cámara</option>
+                            <option value="pedido">Pedido</option>
+                            <option value="otro">Otro</option>
+                        </select>
+                    </div>
+                    <div class="elemento">
+                        <label for="descripcionError">Descripción de la
+                            Incidencias:</label>
+                        <br>
+                        <textarea id="descripcionInci" name="descripcionError"
+                            rows="5"
+                            cols="50"
+                            placeholder="Decribe de la mejor forma posible tu incidencia"></textarea>
+                    </div>
+                    <div class="elemento">
+                        <input type="submit" value="Enviar">
+                    </div>
+                </div>
+            </form>
+        </main>
+
+        <footer class="site-footer">
+            <div class="grid-footer contenedor">
+                <div>
+                    <h3>Drones</h3>
+
+                    <nav class="footer-menu">
+                        <a href="#">JonDron</a>
+                        <a href="#">MediaDron</a>
+                        <a href="#">JulanDron</a>
+                        <a href="#">Drontor</a>
+                        <a href="#">TecnoDron</a>
+                    </nav>
+                </div>
+
+                <div>
+                    <h3>Sobre Nosotros</h3>
+                    <nav class="footer-menu">
+                        <a href="#">Dirección:</a>
+                        <a href="#">Calle del Dron, 12 <br> 01001
+                            Vitoria-Gasteiz, Álava</a>
+                        <a href="#">Teléfono:</a>
+                        <a href="#">+34 945 123 456</a>
+                    </nav>
+                </div>
+            </div>
+
+            <p class="copyright">Derechos reservados a
+                <span>BrumaDron</span></p>
+        </footer>
+    </body>
+</html>
