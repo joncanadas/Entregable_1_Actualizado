@@ -33,6 +33,8 @@ h1 {
 
 h2 {
     font-size: 3.2rem;
+    color: white;
+    text-align: center;
 }
 
 h3 {
@@ -47,7 +49,7 @@ p {
 
 a {
     text-decoration: none;
-    color: #000
+    color: white;
 }
 
 .contenedor {
@@ -66,7 +68,7 @@ a {
 }
 
 .btn:hover {
-    background-color: #7141b4;
+    background-color: #8b6cb6;
 }
 
 .logo {
@@ -133,9 +135,20 @@ a {
 
 /*Main*/
 .destacables {
+    background-color: #8445949f;
     text-align: center;
     display: flex;
     flex-direction: column;
+    font-size: 22px;
+    padding: 4rem;
+}
+
+.destacables a {
+    margin-bottom: 2rem;
+}
+
+.destacables a:hover {
+    color: cadetblue;
 }
 
 .articulos {
@@ -143,12 +156,42 @@ a {
     flex-direction: column;
 }
 
+.articulos h3 {
+    margin-top: 5rem;
+    text-align: center;
+}
+
+.articulos p {
+    padding-left: 45rem;
+    padding-right: 45rem;
+    margin-bottom: 5rem;
+}
+
+.imagen1 {
+    padding-left: 33rem;
+}
+
+.imagen2 {
+    padding-left: 55rem;
+}
+
+.imagen3 {
+    padding-left: 52rem;
+}
+
 .newsletter {
     display: flex;
     flex-direction: column;
+    text-align: center;
+}
+
+.newsletter p {
+    font-size: 18px;
 }
 
 /*End Main*/
+
+/*Footer*/
 
 .site-footer {
     border-top: 1px solid #e1e1e1;

@@ -26,20 +26,23 @@
             </nav>
         </div>
 
+        <div class="bordeDecorativo"></div>
+
         <main class="contenido-incidencia">
             <img src="img/dronInci.png" alt="Dron Incidencia">
             <form action="procesar.php" method="post">
                 <div class="elementos-formulario">
                     <div class="elemento">
-                        <label for="nombre">Nombre:</label>
+                        <label for="nombre" class="lbMargin">Nombre:</label>
                         <input type="text" id="nombre" name="nombre" required>
                     </div>
                     <div class="elemento">
-                        <label for="correo">Correo Electrónico:</label>
+                        <label for="correo" class="lbMargin">Correo
+                            Electrónico:</label>
                         <input type="email" id="correo" name="correo" required>
                     </div>
                     <div class="elemento">
-                        <label for="edad">Edad:</label>
+                        <label for="edad" class="lbMargin">Edad:</label>
                         <input type="number" id="edad" name="edad" required>
                     </div>
                     <div class="elemento">
@@ -52,7 +55,7 @@
                                 <label for="cliente-h">Habitual</label>
                             </li>
                             <li>
-                                <input type="radio" id="cliente-n"
+                                <input type="radio" id="cliente-f"
                                     name="cliente"
                                     value="nuevo"
                                     required>
@@ -98,7 +101,8 @@
                         </ol>
                     </div>
                     <div class="elemento">
-                        <label for="tipoInci">Tipo de Incidencia:</label>
+                        <label for="tipoInci" class="lbMargin">Tipo de
+                            Incidencia:</label>
                         <select id="tipoInci" name="tipoInci" required>
                             <option value="estructura">Estructura</option>
                             <option value="bateria">Batería</option>
@@ -108,7 +112,8 @@
                         </select>
                     </div>
                     <div class="elemento">
-                        <label for="descripcionError">Descripción de la
+                        <label for="descripcionError"
+                            class="lbTextArea">Descripción de la
                             Incidencias:</label>
                         <br>
                         <textarea id="descripcionInci" name="descripcionError"
@@ -116,6 +121,113 @@
                             cols="50"
                             placeholder="Decribe de la mejor forma posible tu incidencia"></textarea>
                     </div>
+                    <div class="bordeDecorativo"></div>
+                    <h3 class="h3Opinion">Para finalizar rellenar esta
+                        tabla con sus
+                        opiniones siendo el 5 la nota más alta y el 1 la más
+                        baja:</h3>
+                    <table class="tablaOpinion">
+                        <tr>
+                            <th>Aspectos</th>
+                            <th>1</th>
+                            <th>2</th>
+                            <th>3</th>
+                            <th>4</th>
+                            <th>5</th>
+                        </tr>
+                        <tr>
+                            <td><label for="CALIDAD">CALIDAD</label></td>
+                            <td><input type="radio" id="CALIDAD"
+                                    name="CALIDAD"
+                                    value="1"
+                                    required></td>
+                            <td><input type="radio" id="CALIDAD"
+                                    name="CALIDAD"
+                                    value="2"
+                                    required></td>
+                            <td><input type="radio" id="CALIDAD"
+                                    name="CALIDAD"
+                                    value="3"
+                                    required></td>
+                            <td><input type="radio" id="CALIDAD"
+                                    name="CALIDAD"
+                                    value="4"
+                                    required></td>
+                            <td><input type="radio" id="CALIDAD"
+                                    name="CALIDAD"
+                                    value="5"
+                                    required></td>
+                        </tr>
+                        <tr>
+                            <td><label for="VUELO">VUELO</label></td>
+                            <td><input type="radio" id="VUELO"
+                                    name="VUELO"
+                                    value="1"
+                                    required></td>
+                            <td><input type="radio" id="VUELO"
+                                    name="VUELO"
+                                    value="2"
+                                    required></td>
+                            <td><input type="radio" id="VUELO"
+                                    name="VUELO"
+                                    value="3"
+                                    required></td>
+                            <td><input type="radio" id="VUELO"
+                                    name="VUELO"
+                                    value="4"
+                                    required></td>
+                            <td><input type="radio" id="VUELO"
+                                    name="VUELO"
+                                    value="5"
+                                    required></td>
+                        </tr>
+                        <tr>
+                            <td><label for="ASPECTO">ASPECTO</label></td>
+                            <td><input type="radio" id="ASPECTO"
+                                    name="ASPECTO"
+                                    value="1"
+                                    required></td>
+                            <td><input type="radio" id="ASPECTO"
+                                    name="ASPECTO"
+                                    value="2"
+                                    required></td>
+                            <td><input type="radio" id="ASPECTO"
+                                    name="ASPECTO"
+                                    value="3"
+                                    required></td>
+                            <td><input type="radio" id="ASPECTO"
+                                    name="ASPECTO"
+                                    value="4"
+                                    required></td>
+                            <td><input type="radio" id="ASPECTO"
+                                    name="ASPECTO"
+                                    value="5"
+                                    required></td>
+                        </tr>
+                        <tr>
+                            <td><label for="DURACION">DURACIÓN</label></td>
+                            <td><input type="radio" id="DURACION"
+                                    name="DURACION"
+                                    value="1"
+                                    required></td>
+                            <td><input type="radio" id="DURACION"
+                                    name="DURACION"
+                                    value="2"
+                                    required></td>
+                            <td><input type="radio" id="DURACION"
+                                    name="DURACION"
+                                    value="3"
+                                    required></td>
+                            <td><input type="radio" id="DURACION"
+                                    name="DURACION"
+                                    value="4"
+                                    required></td>
+                            <td><input type="radio" id="DURACION"
+                                    name="DURACION"
+                                    value="5"
+                                    required></td>
+                        </tr>
+                    </table>
                     <div class="elemento">
                         <input type="submit" value="Enviar">
                     </div>
